@@ -138,5 +138,3 @@ void free_list(DoubleList* list) {
     
     free(list);
 }
-
-}
