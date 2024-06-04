@@ -2,19 +2,17 @@
 #define DOUBLE_LIST_H
 
 typedef struct Node {
-    in data; 
-    struct Node* prev: 
-    strcut Node* next;
+    int data;
+    struct Node* prev;
+    struct Node* next;
+} Node;
 
-}Node;
-
-typedef struct DoubleList{
+typedef struct DoubleList {
     Node* head;
     Node* tail;
 } DoubleList;
 
-//Funcion para manejar la lista
-
+// Funciones para manejar la lista
 DoubleList* create_list();
 void insert_at_beginning(DoubleList* list, int data);
 void insert_at_end(DoubleList* list, int data);
